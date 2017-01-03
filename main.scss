@@ -1,8 +1,141 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import 'reset'; //https://gist.github.com/ricardozea/9809400
 
 $primary-font: 'Inconsolata', monospace;
+$base-font-size: 14px;
+$text-color: #2b2b2b;
+$tag-color: orange;
+$project-border-color: lightgray;
 
+body {color: $text-color}
 
 #content {
   font: 100% $primary-font;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px;
 }
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+nav {
+
+  font: 100% $primary-font;
+  font-size: 1.2*$base-font-size;
+  border-bottom: 1px solid lightgray;
+
+  &:hover {
+    color:$text-color
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+  li:hover { 
+    background-color: black; 
+    color: white;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+#main-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#info-container {
+  padding: 20px 0px 100px 0px;
+}
+
+#title { margin-bottom: 10px; }
+
+#tag { 
+  font-size: 0.9*$base-font-size;
+  border-bottom: 1px solid $tag-color;
+  margin: 5px 5px 5px 5px;
+}
+#tag:hover {
+  color: white;
+  background-color: $tag-color;
+}
+
+
+#project-section {
+  padding: 100px 0px 0px 0px;
+  max-width: 1180px;
+  //max-width: 1180px; 4 rows
+  max-width: 960px;
+}
+#project-header {
+  border-bottom: 2px solid orange;
+}
+
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+#project {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 256px;
+  border: 2px solid $project-border-color;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+
+  &:hover {
+  background-color: $tag-color;
+  border: 2px solid $tag-color;
+  }
+
+  #title-row {
+    min-height: 34px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    #project-name {
+      padding: 0px 0px 0px 5px;
+    }
+  }
+
+  #thumbnail {
+    height: 128px;
+    //height: 256px;
+    //margin-bottom: -128px;
+    //-webkit-clip-path: inset(0px 0px 128px 0px);
+    //clip-path: inset(0px 0px 128px 0px);
+  }
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity .15s ease-in-out;
+  -moz-transition: opacity .15s ease-in-out;
+  -webkit-transition: opacity .15s ease-in-out;
+}
+
+.fade:hover {
+  opacity: 0.9;
+}
+
+h1 { font-size: 2 * $base-font-size; }
+h2 { font-size: 1.4 * $base-font-size; }
+h3 { font-size: 1.2 * $base-font-size; }

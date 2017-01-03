@@ -7,12 +7,98 @@
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <div id='header'></div>
+    <header id='header'>
+      <nav>
+        <ul>
+          <i class="fa fa-exclamation-circle"></i>
+          <li>about</li>
+          <li>projects</li>
+        </ul>
+      </nav>
+    </header>
     <div id='content'>
-      <h1>aplucche</h1>
+      <div id="info-container">
+        <h1 id=title>aplucche</h1>
+        <h3>NYC based web developent and data analysis</h3>
+        <h3>aplucche@gmail.com | 646-504-2758</h3>
+        <h3>github.com/aplucche</h3>
+      </div>
+      <div id="main-row">
       <h2>Visualization</h2>
+        <div id="tag">d3js</div>
+        <div id="tag">Tableau</div>
+      </div>
+      <div id="main-row">
       <h2>Analysis</h2>
+        <div id="tag">Python</div>
+        <div id="tag">Pandas</div>
+        <div id="tag">Postgres</div>
+        <div id="tag">SQL</div>
+      </div>
+      <div id="main-row">
       <h2>Development</h2>
+        <div id="tag">React</div>
+        <div id="tag">Flask</div>
+      </div>
     </div>
+    <section id="project-section">
+      <h2 id="project-header">Projects:</h2>
+      <div id="projects">
+
+      <a target="_blank" href="http://nyvis.tumblr.com/">
+      <div id="project" class="fade">
+        <div id="title-row">
+          <div id="project-name">Seamless Menu Visualization</div>
+          <div id="tag">d3js</div>
+        </div>
+        <image id="thumbnail" src="images/project_nyvis_rect.jpg">
+      </div>
+      </a>
+
+      <a target="_blank" href="http://dinnernote.com/">
+      <div id="project" class="fade">
+        <div id="title-row">
+          <div id="project-name">Menu Project</div>
+          <div id="tag">React</div>
+        </div>
+        <image id="thumbnail" src="images/menu_rect.jpg">
+      </div>
+      </a>
+
+      <a target="_blank" href="http://nbviewer.jupyter.org/github/aplucche/nyc_business_licenses/blob/master/DCA%20Licenses.ipynb">
+      <div id="project" class="fade">
+        <div id="title-row">
+          <div id="project-name">NYC Business License Ipython Notebook</div>
+          <div id="tag">Python</div>
+          <div id="tag">Pandas</div>
+        </div>
+        <image id="thumbnail" src="images/bizlicenses_rect.jpg">
+      </div>
+      </a>
+
+      <a target="_blank" href="http://s3.amazonaws.com/vis-examples/headlines/index.html">
+      <div id="project" class="fade">
+        <div id="title-row">
+          <div id="project-name">News Headline Visualization</div>
+          <div id="tag">d3js</div>
+          <div id="tag">Python</div>
+        </div>
+        <image id="thumbnail" src="images/headlines_rect.jpg">
+      </div>
+      </a>
+
+      <a target="_blank" href="http://nbviewer.jupyter.org/github/aplucche/github_data/blob/master/github_data.ipynb">
+      <div id="project" class="fade">
+        <div id="title-row">
+          <div id="project-name">Github Data Analysis</div>
+          <div id="tag">SQL</div>
+          <div id="tag">Python</div>
+        </div>
+        <image id="thumbnail" src="images/github.jpg">
+      </div>
+      </a>
+
+    </div>
+    </section>
   </body>
 </html>

@@ -1,5 +1,158 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Eric Meyer's CSS Reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   This is a Sass partial
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #2b2b2b; }
+
 #content {
-  font: 100% "Inconsolata", monospace; }
+  font: 100% "Inconsolata", monospace;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px; }
+
+a {
+  color: #2b2b2b;
+  text-decoration: none; }
+
+nav {
+  font: 100% "Inconsolata", monospace;
+  font-size: 16.8px;
+  border-bottom: 1px solid lightgray; }
+  nav:hover {
+    color: #2b2b2b; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    display: inline-block; }
+  nav li:hover {
+    background-color: black;
+    color: white; }
+  nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none; }
+
+#main-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+
+#info-container {
+  padding: 20px 0px 100px 0px; }
+
+#title {
+  margin-bottom: 10px; }
+
+#tag {
+  font-size: 12.6px;
+  border-bottom: 1px solid orange;
+  margin: 5px 5px 5px 5px; }
+
+#tag:hover {
+  color: white;
+  background-color: orange; }
+
+#project-section {
+  padding: 100px 0px 0px 0px;
+  max-width: 1180px;
+  max-width: 960px; }
+
+#project-header {
+  border-bottom: 2px solid orange; }
+
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-grow: 2; }
+
+#project {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 256px;
+  border: 2px solid lightgray;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px; }
+  #project:hover {
+    background-color: orange;
+    border: 2px solid orange; }
+  #project #title-row {
+    min-height: 34px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    #project #title-row #project-name {
+      padding: 0px 0px 0px 5px; }
+  #project #thumbnail {
+    height: 128px; }
+
+.fade {
+  opacity: 1;
+  transition: opacity .15s ease-in-out;
+  -moz-transition: opacity .15s ease-in-out;
+  -webkit-transition: opacity .15s ease-in-out; }
+
+.fade:hover {
+  opacity: 0.9; }
+
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 19.6px; }
+
+h3 {
+  font-size: 16.8px; }
 
 /*# sourceMappingURL=main.css.map */
